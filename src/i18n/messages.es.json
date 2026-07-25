@@ -1,0 +1,19 @@
+{
+    "task_not_found": "Tarea no encontrada.",
+    "task_already_exists": "La tarea ya existe.",
+    "title_required": "El título es obligatorio y debe ser un texto no vacío.",
+    "task_deleted": "Tarea eliminada correctamente.",
+    "user_not_found": "Usuario no encontrado.",
+    "invalid_email": "Correo electrónico inválido.",
+    "password_required": "La contraseña es obligatoria.",
+    "password_weak": "La contraseña debe tener al menos 6 caracteres e incluir al menos una mayúscula, una minúscula y un número.",
+    "update_no_valid_fields": "Debes enviar al menos un campo válido para actualizar.",
+    "user_and_tasks_deleted": "Usuario y tareas eliminados correctamente.",
+    "user_already_exists": "El usuario ya existe.",
+    "user_registered": "Usuario registrado exitosamente.",
+    "incorrect_credentials": "Usuario o contraseña incorrectos.",
+    "access_denied_no_token": "Acceso denegado. Token no proporcionado.",
+    "invalid_token": "Token inválido.",
+    "internal_server_error": "Error interno del servidor.",
+    "protected_route": "Ruta protegida."
+}

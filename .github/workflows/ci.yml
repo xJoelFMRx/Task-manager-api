@@ -1,0 +1,41 @@
+name: CI
+
+# Run the test suite on every push and pull request to main.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    # Spin up a temporary MongoDB instance for the tests to connect to.
+    services:
+      mongodb:
+        image: mongo:7
+        ports:
+          - 27017:27017
+
+    env:
+      # The test database provided by the service container above.
+      MONGO_URI: mongodb://localhost:27017/task-manager-test
+      # A dummy secret is enough to sign/verify JWTs during tests.
+      JWT_SECRET: test_secret_for_ci
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test

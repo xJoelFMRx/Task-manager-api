@@ -1,0 +1,19 @@
+{
+    "task_not_found": "Task not found.",
+    "task_already_exists": "Task already exists.",
+    "title_required": "Title is required and must be a non-empty string.",
+    "task_deleted": "Task deleted successfully.",
+    "user_not_found": "User not found.",
+    "invalid_email": "Invalid email.",
+    "password_required": "Password is required.",
+    "password_weak": "Password must be at least 6 characters long and include at least one uppercase letter, one lowercase letter, and one number.",
+    "update_no_valid_fields": "You must send at least one valid field to update.",
+    "user_and_tasks_deleted": "User and tasks deleted successfully.",
+    "user_already_exists": "User already exists.",
+    "user_registered": "User registered successfully.",
+    "incorrect_credentials": "Incorrect user or password.",
+    "access_denied_no_token": "Access denied. No token provided.",
+    "invalid_token": "Invalid token.",
+    "internal_server_error": "Internal server error.",
+    "protected_route": "Protected route."
+}

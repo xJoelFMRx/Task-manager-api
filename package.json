@@ -1,0 +1,35 @@
+{
+  "type": "module",
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "description": "RESTful API for user and task management, built with Node.js, Express and MongoDB. Features JWT authentication, per-user task CRUD, input validation, centralized error handling and i18n (English/Spanish).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb",
+    "mongoose",
+    "jwt",
+    "rest-api",
+    "i18n"
+  ],
+  "author": "Joel Fernando Mora Rivera",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-validator": "^7.3.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.0.2"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.11",
+    "supertest": "^7.2.2"
+  }
+}
